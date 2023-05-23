@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet"/>
+    <title>NMIXX | MUSICA</title>
+</head>
+
+<body id="musicaBody">
+    <header>
+        <h1 class="tituloIndex">NMIXX</h1>
+        <nav>
+            <ul class="navUl">
+                <li><a class="navbarLink" href="index.html">INICIO</a></li>
+                <li><a class="navbarLink" href="miembros.html">MIEMBROS</a></li>
+                <li><a class="navbarLink" href="musica.html">MUSICA</a></li>
+                <li><a class="navbarLink" href="galeria.html">GALERIA</a></li>
+                <li><a class="navbarLink" href="tienda.html">TIENDA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="musicaMain">
+        <section class="albumCard">
+            <img src="img/adMareCover.jpg" alt="AD MARE" id="albumImg" title="AD MARE">
+            <div class="albumInfo">
+                <h2 class="albumTitle">AD MARE</h2>
+                <p class="albumYear">Año de salida: 2022</p>
+                <p class="albumDescription">El debut EP de NMIXX, que combina géneros de baile funk y pop rock adolescente. Incluye dos canciones: "O.O" y "Tank".</p>
+                <hr class="separator">
+                <ul class="songList">
+                    <li><a href="https://open.spotify.com/track/3ucx0k0IosRjrsmQc34zUW?si=3da76c5c003042aa" id="songURL">O.O</a></li>
+                    <li><a href="https://open.spotify.com/track/3lrNsPdn98i6rxO142pLT6?si=5f359fa0fd854c92" id="songURL">Tank</a></li>              
+                </ul>
+            </div>
+        </section>
+
+        <section class="albumCard">
+            <img src="img/entwurfCover.jpg" alt="ENTWURF" id="albumImg2" title="ENTWURF">
+            <div class="albumInfo">
+                <h2 class="albumTitle">ENTWURF</h2>
+                <p class="albumYear">Año de salida: 2022</p>
+                <p class="albumDescription">El segundo EP de NMIXX, que mezcla los géneros de hip hop, jazz, trap soñador y pop. Incluye dos canciones: "DICE" y "COOL (Your rainbow)".</p>
+                <hr class="separator">
+                <ul class="songList">
+                    <li><a href="https://open.spotify.com/track/1QpwvWMQGdOgA8MXXfgs4H?si=8571f5d282d645ba" id="songURL">DICE</a></li>
+                    <li><a href="https://open.spotify.com/track/6SYVnDzwzMmTGqW13DSiZA?si=de391b7c88354cc2" id="songURL">COOL (Your Rainbow)</a></li>
+                </ul>                
+            </div>
+        </section>
+
+        <section class="albumCard">
+            <img src="img/expergoCover.jpg" alt="expérgo" id="albumImg3" title="expérgo">
+            <div class="albumInfo">
+                <h2 class="albumTitle">expérgo</h2>
+                <p class="albumYear">Año de salida: 2023</p>
+                <p class="albumDescription">El tercer EP de NMIXX con una mezcla energética de géneros, incluyendo hip hop y pop. Incluye seis canciones: "Young, Dumb, Stupid", "Love Me Like This", "PAXXWORD", "Just Did It", "My Gosh" y "HOME".</p>
+                <hr class="separator">
+                <ul class="songList">
+                    <li><a href="https://open.spotify.com/track/52I1DbbQsmiAQBhaf4uCbW?si=0b5ad7ac0f7c48ba" id="songURL">Young, Dumb, Stupid</a></li>
+                    <li><a href="https://open.spotify.com/track/3o3bRIOKDwGOdqL9HBUNrO?si=c5ac04760ee048f9" id="songURL">Love Me Like This</a></li>
+                    <li><a href="https://open.spotify.com/track/4f8qVAD5rOWINdsT2rO4Mm?si=7846cf67de4e48fe" id="songURL">PAXXWORD</a></li>
+                    <li><a href="https://open.spotify.com/track/4gUSHUCZgCj2X46uwIIOyU?si=bec65c96eb454a07" id="songURL">Just Did It</a></li>
+                    <li><a href="https://open.spotify.com/track/77I6NcjXgtKX2s2qdDITYJ?si=e880ebe078ca4c0c" id="songURL">My Gosh</a></li>
+                    <li><a href="https://open.spotify.com/track/5HtWf8hNpeg0endHaNFM17?si=6587590d7e8948c6" id="songURL">HOME</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div id="imageContainer">
+        <img id="enlargedImg" src="" alt="Enlarged Image">
+        <span id="closeBtn">&times;</span>
+    </div>
+
+    <footer>
+        <div class="container">
+            <img src="img/logo.png" alt="Logo" class="logo" title="NMIXX ENTWURF" />
+            <p class="footer-text">
+                Desarrollado por Bautista Caschetto, 2023. Todos los derechos
+                reservados a JYPEntertainment.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>

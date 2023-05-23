@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
+        rel="stylesheet" />
+    <title>NMIXX | TIENDA</title>
+</head>
+
+<body id="musicaBody">
+    <header>
+        <h1 class="tituloIndex">NMIXX</h1>
+        <nav>
+            <ul class="navUl">
+                <li><a class="navbarLink" href="index.html">INICIO</a></li>
+                <li><a class="navbarLink" href="miembros.html">MIEMBROS</a></li>
+                <li><a class="navbarLink" href="musica.html">MUSICA</a></li>
+                <li><a class="navbarLink" href="galeria.html">GALERIA</a></li>
+                <li><a class="navbarLink" href="tienda.html">TIENDA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="tienda container">
+        <h2>Tienda</h2>
+
+        <div class="productos">
+            <div class="cardProducto">
+                <div class="cardImg">
+                    <img src="productos/adMareCover.jpg" alt="AD MARE" />
+                </div>
+                <div class="cardInfo">
+                    <h3>AD MARE</h3>
+                    <p class="precio">$8000</p>
+                    <p class="stock">Stock: 5 unidades</p>
+                    <button class="agregarBtn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="cardProducto">
+                <div class="cardImg">
+                    <img src="productos/entwurfCover.jpg" alt="AD MARE" />
+                </div>
+                <div class="cardInfo">
+                    <h3>ENTWURF</h3>
+                    <p class="precio">$8000</p>
+                    <p class="stock">Stock: 5 unidades</p>
+                    <button class="agregarBtn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="cardProducto">
+                <div class="cardImg">
+                    <img src="productos/expergoCover.jpg" alt="AD MARE" />
+                </div>
+                <div class="cardInfo">
+                    <h3>expérgo</h3>
+                    <p class="precio">$8000</p>
+                    <p class="stock">Stock: 5 unidades</p>
+                    <button class="agregarBtn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="cardProducto">
+                <div class="cardImg">
+                    <img src="productos/kyujinDigipack.jpg" alt="AD MARE" />
+                </div>
+                <div class="cardInfo">
+                    <h3>Kyujin Digipack Ver.</h3>
+                    <p class="precio">$4000</p>
+                    <p class="stock">Stock: 2 unidades</p>
+                    <button class="agregarBtn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="cardProducto">
+                <div class="cardImg">
+                    <img src="productos/sullyoonDigipack.jpg" alt="AD MARE" />
+                </div>
+                <div class="cardInfo">
+                    <h3>Sullyoon Digipack Ver.</h3>
+                    <p class="precio">$4000</p>
+                    <p class="stock">Stock: 1 unidades</p>
+                    <button class="agregarBtn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="cardProducto">
+                <div class="cardImg">
+                    <img src="productos/haewonDigipack.jpg" alt="AD MARE" />
+                </div>
+                <div class="cardInfo">
+                    <h3>Haewon Digipack Ver.</h3>
+                    <p class="precio">$4000</p>
+                    <p class="stock">Stock: 3 unidades</p>
+                    <button class="agregarBtn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="cardProducto">
+                <div class="cardImg">
+                    <img src="productos/mixxpedia.jpg" alt="AD MARE" />
+                </div>
+                <div class="cardInfo">
+                    <h3>MIXXPEDIA: PICK LA 1st PhotoBook</h3>
+                    <p class="precio">$12000</p>
+                    <p class="stock">Stock: 1 unidades</p>
+                    <button class="agregarBtn">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="carritoSection">
+        <button id="carritoBtn" class="carritoBtn">
+            <p id="carritoContador"></p>
+            <img src="/logos/bxs-cart.svg" alt="" id="SVG">
+        </button>
+        <div class="carritoContainer" id="carritoContainer">
+            <h2>Carrito de compras</h2>
+            <div class="carritoProductos">
+                <!-- Aquí se agregarán dinámicamente los productos seleccionados -->
+            </div>
+            <p>Total: <span id="total">0</span></p>
+            <button id="vaciarBtn">Vaciar carrito</button>
+            <button id="pagarBtn">Ir a pagar</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <img src="img/logo.png" alt="Logo" class="logo" title="NMIXX ENTWURF" />
+            <p class="footer-text">
+                Desarrollado por Bautista Caschetto, 2023. Todos los derechos
+                reservados a JYPEntertainment.
+            </p>
+        </div>
+    </footer>
+
+    <script src="carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

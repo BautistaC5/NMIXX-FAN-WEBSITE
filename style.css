@@ -1,0 +1,692 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#indexBody {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: rgb(57, 255, 20);
+}
+
+#indexBody::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(nmixx.jpg);
+  background-size: cover;
+  filter: opacity(95%);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+body:hover::before {
+  filter: opacity(100%);
+}
+
+header {
+  color: #ffffff;
+  padding: 1px;
+  text-align: center;
+  grid-area: header;
+}
+
+.tituloIndex {
+  margin: 0;
+}
+
+nav {
+  background: transparent;
+  padding: 10px;
+}
+
+.navUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  text-align: center;
+  font-weight: 600;
+}
+
+.navUl li {
+  display: inline;
+}
+
+.navbarLink {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.navbarLink:hover {
+  background-color: rgb(57, 255, 20);
+  transform: scale(1.05);
+  color: #000;
+}
+
+.main-content {
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.main-content a {
+  text-decoration: none;
+  color: #000;
+}
+
+.tituloMain {
+  margin: 0 0 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.conocelas-btn {
+  background-color: rgb(57, 255, 20);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.conocelas-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+
+  .tituloIndex {
+    font-size: 24px;
+  }
+
+  .navUl {
+    font-size: 12px;
+  }
+
+  .main-content {
+    height: 300px;
+  }
+
+  .tituloMain {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .conocelas-btn {
+    font-size: 14px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .tituloIndex {
+    font-size: 28px;
+  }
+
+  .navUl {
+    font-size: 14px;
+  }
+
+  .main-content {
+    height: 400px;
+  }
+
+  .tituloMain {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .conocelas-btn {
+    font-size: 16px;
+  }
+}
+
+
+/*MIEMBROS*/
+
+#miembrosBody {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-image: url(nmixx.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: fixed;
+  gap: 10px;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+#miembrosHeader {
+  grid-area: header;
+  color: #ffffff;
+  padding: 1px;
+  text-align: center;
+}
+
+#miembrosMain {
+  grid-area: main1;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  gap: 10px;
+  padding: 20px;
+  grid-area: main;
+}
+
+.cardGroupContenedor {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cardGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+.cardNmixx {
+  background-color: #000;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cardNmixx a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardNmixx:hover {
+  transform: scale(1.05);
+  background-color: rgb(57, 255, 20);
+  color: #000;
+}
+
+.cardTitle {
+  font-weight: 600;
+}
+
+.cardImagen {
+  width: 80%;
+  border-radius: 5px;
+}
+
+#miembrosSection {
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.memberInfo {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.memberText {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: rgb(57, 255, 20);
+}
+
+.memberInfoImg {
+  width: 25%;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(57, 255, 20);
+  padding: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.footer-text {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/*MUSICA*/
+
+#musicaBody {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-image: url(nmixx.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: fixed;
+  gap: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+#musicaMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.albumCard {
+  width: 300px;
+  margin: 10px;
+  background-color: rgb(0, 0, 0, 0.9);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #FFF;
+}
+
+#albumImg, #albumImg2, #albumImg3 {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition-duration: 0.2s;
+}
+
+#albumImg:hover {
+  cursor: zoom-in;
+  scale: 1.1;
+}
+
+#albumImg2:hover {
+  cursor: zoom-in;
+  scale: 1.1;
+}
+
+#albumImg3:hover {
+  cursor: zoom-in;
+  scale: 1.1;
+}
+
+#imageContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: none;
+}
+
+#imageContainer img {
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 10px;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+#closeBtn:hover {
+  background-color: rgb(57, 255, 20, 0.8);
+  border-radius: 50px;
+}
+
+.albumTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+.albumYear {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.albumDescription {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.separator {
+  height: 3px;
+  background-color: #57FF14;
+  margin: 20px 0;
+  border: none;
+}
+
+
+.songList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.songList li {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+#songURL {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+#songURL::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: transparent;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+#songURL:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+  background-color: #57FF14;
+}
+
+/*GALERIA*/
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.galleryImg {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.close {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+/*TIENDA*/
+
+.tienda {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cardProducto {
+  width: 200px;
+  margin: 1%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.6);
+}
+
+.cardImg {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+
+.cardImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cardInfo h3 {
+  margin-bottom: 5px;
+}
+
+.precio {
+  color: rgb(57, 255, 20);
+  margin-bottom: 5px;
+}
+
+.stock {
+  margin-bottom: 10px;
+}
+
+.agregarBtn {
+  background-color: rgb(57, 255, 20);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Estilos generales */
+
+.carritoBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(57, 255, 20);
+  color: #FFF;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+#carritoContador {
+  background-color: red;
+  border-radius: 100%;
+  padding: 3px;
+  display: none;
+}
+
+#SVG {
+  display: inline-block;
+}
+
+.carritoContainer {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #FFF;
+  display: none;
+  z-index: 9999;
+}
+
+.carritoContainer.open {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+}
+
+.carritoProductos {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los productos en el carrito */
+.carrito-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #000;
+}
+
+.carrito-precio {
+  font-weight: bold;
+}
+
+.quitarBtn {
+  background-color: rgb(57, 255, 20);
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Estilos para el botón de pagar */
+#pagarBtn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #393c3f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#pagarBtn:hover {
+  background-color: rgb(57, 255, 20);
+  color: #000;
+}
+
+#vaciarBtn {
+  display: none;
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #393c3f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#vaciarBtn:hover {
+  background-color: rgb(57, 255, 20);
+  color: #000;
+}
