@@ -19,28 +19,39 @@
 <body id="miembrosBody" class="scrolling-bg">
 
     <header>
-        <h1 class="tituloIndex">NMIXX</h1>
-        <nav>
-            <ul class="navUl">
-                <li><a class="navbarLink" href="index.html">INICIO</a></li>
-                <li><a class="navbarLink" href="miembros.html">MIEMBROS</a></li>
-                <li><a class="navbarLink" href="musica.html">MUSICA</a></li>
-                <li><a class="navbarLink" href="galeria.html">GALERIA</a></li>
-                <li><a class="navbarLink" href="tienda.html">TIENDA</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="divNav container-fluid flex-column">
+                <h1 class="tituloIndex">NMIXX</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link text-light" href="index.html">INICIO</a>
+                        <a class="nav-link text-light" href="miembros.html">MIEMBROS</a>
+                        <a class="nav-link text-light" href="musica.html">MUSICA</a>
+                        <a class="nav-link text-light" href="galeria.html">GALERIA</a>
+                        <a class="nav-link text-light" href="tienda.html">TIENDA</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="main-content container" id="miembrosMain">
+    <main>
+        <section class="memberSection container">
             <h2>MIEMBROS</h2>
-            <div class="cardGroup container">
-                    <div class="cardNmixx">
-                        <a href="#lily">
-                            <h6 class="cardTitle">Lily</h6>
-                            <img src="img/lily.jpg" alt="" class="cardImagen">
-                            <p>Vocalista</p>
-                        </a>
-                    </div>
+
+            <div class="cardGroup">
+                <div class="cardNmixx">
+                    <a href="#lily">
+                        <h6 class="cardTitle">Lily</h6>
+                        <img src="img/lily.jpg" alt="" class="cardImagen">
+                        <p>Vocalista</p>
+                    </a>
+                </div>
 
                 <div class="cardNmixx">
                     <a href="#haewon">
@@ -65,6 +76,7 @@
                         <p>Vocalista y center</p>                        
                     </a>
                 </div>
+
                 <div class="cardNmixx">
                     <a href="#kyujin">
                         <h6 class="cardTitle">Kyujin</h6>
@@ -72,6 +84,7 @@
                         <p>Rapera y vocalista</p>             
                     </a>
                 </div>
+
                 <div class="cardNmixx">
                     <a href="#jiwoo">
                         <h6 class="cardTitle">Jiwoo</h6>
@@ -80,52 +93,56 @@
                     </a>
                 </div>
             </div>
+
+            <div class="divMemberInfo">
+                <div class="memberInfo card" id="lily">
+                    <img src="img/lilyInfo.jpg" alt="Lily NMIXX" class="memberInfoImg card-img-top">
+                    <div class="memberText">
+                        <h4>Lily</h4>
+                        <p>Nacida el 17 de octubre de 2002 en Victoria, Australia, Lily fusiona la herencia multicultural de sus padres para brindar una energía única a través de su música. Esta talentosa vocalista principal se destaca por su potente voz y su capacidad para transmitir emociones profundas a través de su interpretación.</p>
+                    </div>
+                </div>
+                <div class="memberInfo card" id="haewon">
+                    <img src="img/haewonInfo.jpeg" alt="Haewon NMIXX" class="memberInfoImg card-img-top">
+                    <div class="memberText">
+                        <h4>Haewon</h4>
+                        <p>Nacida el 25 de febrero de 2003 en Namdong, Incheon, Corea del Sur, Haewon ha perfeccionado sus habilidades como líder, vocalista y bailarina. Esta artista multifacética cautiva a los fanáticos con su carisma y versatilidad. Su voz poderosa y su destreza en el baile la destacan como una fuerza inigualable en la industria del K-pop.</p>
+                    </div>
+                </div>
+                <div class="memberInfo card" id="bae">
+                    <img src="img/baeInfo.jpeg" alt="Bae NMIXX" class="memberInfoImg card-img-top">
+                    <div class="memberText">
+                        <h4>Bae</h4>
+                        <p>Nacida el 28 de diciembre de 2004 en Yangsan, Corea del Sur, Bae cautiva al público con su carisma y talento innato. Como vocalista y bailarina de NMIXX, ella ilumina el escenario con su energía y pasión. Con su presencia magnética y su interpretación emotiva, Bae se ha convertido en una fuerza imprescindible en la escena del K-pop.</p>
+                    </div>
+                </div>
+                <div class="memberInfo card" id="sully">
+                    <img src="img/sullyInfo.jpeg" alt="Sullyoon NMIXX" class="memberInfoImg card-img-top">
+                    <div class="memberText">
+                        <h4>Sullyoon</h4>
+                        <p>Nacida el 26 de enero de 2004 en Taepyeong, Daejeon, Corea del Sur, Sullyoon cautiva a todos con su belleza única y visuales impactantes. Su presencia en el escenario y sus visuales inigualables la convierten en una figura destacada en la industria del entretenimiento.</p>
+                    </div>
+                </div>
+                <div class="memberInfo card" id="kyujin">
+                    <img src="img/kyujinInfo.jpeg" alt="Kyujin NMIXX" class="memberInfoImg card-img-top">
+                    <div class="memberText">
+                        <h4>Kyujin</h4>
+                        <p>Nacida el 26 de mayo de 2006 en Bundang-gu, Seongnam, Gyeonggi-do, Corea del Sur, Kyujin destaca por su habilidad para entregar letras impactantes y fluidez en el rap. Como vocalista, bailarina y rapera de NMIXX, su presencia en el escenario es electrizante, capturando la atención de los fanáticos con su estilo único.</p>
+                    </div>
+                </div>
+                <div class="memberInfo card" id="jiwoo">
+                    <img src="img/jiwooInfo.jpeg" alt="Jiwoo NMIXX" class="memberInfoImg card-img-top">
+                    <div class="memberText">
+                        <h4>Jiwoo</h4>
+                        <p>Nacida el 13 de abril de 2005 en Gyeonggi-do Dasan-dong, Namyangju, Corea del Sur, Jiwoo destaca como vocalista, bailarina y rapera de NMIXX. Su fluidez en el rap y su energía en el escenario son impresionantes, complementando a la perfección el talento de Kyujin. Juntas, crean un dúo dinámico que cautiva a los fanáticos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section id="miembrosSection" class="container">
-            <div class="memberInfo" id="lily">
-                <img src="img/lilyInfo.jpg" alt="Lily NMIXX" class="memberInfoImg">
-                <div class="memberText">
-                    <h4>Lily</h4>
-                    <p>Nacida el 17 de octubre de 2002 en Victoria, Australia, Lily fusiona la herencia multicultural de sus padres para brindar una energía única a través de su música. Esta talentosa vocalista principal se destaca por su potente voz y su capacidad para transmitir emociones profundas a través de su interpretación.</p>
-                </div>
-            </div>
-            <div class="memberInfo" id="haewon">
-                <img src="img/haewonInfo.jpeg" alt="Haewon NMIXX" class="memberInfoImg">
-                <div class="memberText">
-                    <h4>Haewon</h4>
-                    <p>Nacida el 25 de febrero de 2003 en Namdong, Incheon, Corea del Sur, Haewon ha perfeccionado sus habilidades como líder, vocalista y bailarina. Esta artista multifacética cautiva a los fanáticos con su carisma y versatilidad. Su voz poderosa y su destreza en el baile la destacan como una fuerza inigualable en la industria del K-pop.</p>
-                </div>
-            </div>
-            <div class="memberInfo" id="bae">
-                <img src="img/baeInfo.jpeg" alt="Bae NMIXX" class="memberInfoImg">
-                <div class="memberText">
-                    <h4>Bae</h4>
-                    <p>Nacida el 28 de diciembre de 2004 en Yangsan, Corea del Sur, Bae cautiva al público con su carisma y talento innato. Como vocalista y bailarina de NMIXX, ella ilumina el escenario con su energía y pasión. Con su presencia magnética y su interpretación emotiva, Bae se ha convertido en una fuerza imprescindible en la escena del K-pop.</p>
-                </div>
-            </div>
-            <div class="memberInfo" id="sully">
-                <img src="img/sullyInfo.jpeg" alt="Sullyoon NMIXX" class="memberInfoImg">
-                <div class="memberText">
-                    <h4>Sullyoon</h4>
-                    <p>Nacida el 26 de enero de 2004 en Taepyeong, Daejeon, Corea del Sur, Sullyoon cautiva a todos con su belleza única y visuales impactantes. Su presencia en el escenario y sus visuales inigualables la convierten en una figura destacada en la industria del entretenimiento.</p>
-                </div>
-            </div>
-            <div class="memberInfo" id="kyujin">
-                <img src="img/kyujinInfo.jpeg" alt="Kyujin NMIXX" class="memberInfoImg">
-                <div class="memberText">
-                    <h4>Kyujin</h4>
-                    <p>Nacida el 26 de mayo de 2006 en Bundang-gu, Seongnam, Gyeonggi-do, Corea del Sur, Kyujin destaca por su habilidad para entregar letras impactantes y fluidez en el rap. Como vocalista, bailarina y rapera de NMIXX, su presencia en el escenario es electrizante, capturando la atención de los fanáticos con su estilo único.</p>
-                </div>
-            </div>
-            <div class="memberInfo" id="jiwoo">
-                <img src="img/jiwooInfo.jpeg" alt="Jiwoo NMIXX" class="memberInfoImg">
-                <div class="memberText">
-                    <h4>Jiwoo</h4>
-                    <p>Nacida el 13 de abril de 2005 en Gyeonggi-do Dasan-dong, Namyangju, Corea del Sur, Jiwoo destaca como vocalista, bailarina y rapera de NMIXX. Su fluidez en el rap y su energía en el escenario son impresionantes, complementando a la perfección el talento de Kyujin. Juntas, crean un dúo dinámico que cautiva a los fanáticos.</p>
-                </div>
-            </div>
-    </section>
+    
+
 
     <br>
 

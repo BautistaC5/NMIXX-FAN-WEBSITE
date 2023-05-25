@@ -43,31 +43,23 @@ nav {
   padding: 10px;
 }
 
-.navUl {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar-nav {
   background: transparent;
   text-align: center;
   font-weight: 600;
 }
 
-.navUl li {
-  display: inline;
-}
-
-.navbarLink {
+.nav-link {
   display: inline-block;
-  color: #fff;
   text-decoration: none;
   padding: 10px;
   transition: all 0.3s ease;
 }
 
-.navbarLink:hover {
+.nav-link:hover {
   background-color: rgb(57, 255, 20);
   transform: scale(1.05);
-  color: #000;
+  color: #000!important;
 }
 
 .main-content {
@@ -110,16 +102,20 @@ nav {
 
 /* Mobile Styles */
 @media only screen and (max-width: 320px) {
-  body {
+  #indexBody {
     font-size: 14px;
+  }
+
+  #indexBody::before {
+    background-size: 100%;
   }
 
   .tituloIndex {
     font-size: 24px;
   }
 
-  .navUl {
-    font-size: 12px;
+  .divNav {
+    flex-direction: row!important;
   }
 
   .main-content {
@@ -136,33 +132,24 @@ nav {
   }
 }
 
-/* Tablet Styles */
-@media only screen and (min-width: 321px) and (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  .tituloIndex {
-    font-size: 28px;
-  }
-
-  .navUl {
+@media only screen and (max-width: 760px) {
+  #indexBody {
     font-size: 14px;
   }
 
-  .main-content {
-    height: 400px;
+  #indexBody::before {
+    background-size: 100%;
   }
 
-  .tituloMain {
-    font-size: 24px;
-    margin-bottom: 15px;
+  nav {
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
-  .conocelas-btn {
-    font-size: 16px;
+  nav > .container-fluid {
+    flex-direction: row!important;
   }
 }
+
 
 
 /*MIEMBROS*/
@@ -175,13 +162,12 @@ nav {
   background-size: cover;
   background-position: 0 0;
   background-attachment: fixed;
-  gap: 10px;
+  gap: 2rem;
   background-color: rgb(0, 0, 0);
   display: grid;
   grid-template-areas:
     "header"
     "main"
-    "section"
     "footer";
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -194,27 +180,20 @@ nav {
   text-align: center;
 }
 
-#miembrosMain {
-  grid-area: main1;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  gap: 10px;
-  padding: 20px;
+main {
   grid-area: main;
 }
 
-.cardGroupContenedor {
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+.memberSection {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  padding: 10px;
 }
 
 .cardGroup {
   display: flex;
   flex-direction: row;
+  padding: 10px;
   gap: 10px;
 }
 
@@ -231,6 +210,7 @@ nav {
   border-radius: 5px;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
 }
 
 .cardNmixx a {
@@ -253,23 +233,21 @@ nav {
   border-radius: 5px;
 }
 
-#miembrosSection {
-  grid-area: section;
+.divMemberInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  margin-top: 50px;
+  gap: 2rem;
 }
 
 .memberInfo {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0)!important;
   display: flex;
-  flex-direction: row;
-  width: 800px;
-  height: 200px;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  flex-direction: row!important;
+  width: 800px!important;
+  height: 200px!important;
+  border-radius: 5px!important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)!important;
 }
 
 .memberText {
@@ -280,7 +258,8 @@ nav {
 }
 
 .memberInfoImg {
-  width: 25%;
+  width: 25%!important;
+  border-radius: 5px;
 }
 
 footer {
@@ -305,6 +284,36 @@ footer {
 .footer-text {
   font-weight: 600;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #miembrosBody {
+    background-size: 100%;
+    justify-content: center;
+  }
+
+  .cardGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardNmixx {
+    text-align: center;
+  }
+
+  .memberInfo {
+    flex-direction: column!important;
+    width: auto!important;
+    height: auto!important;
+    text-align: center!important;
+    align-items: center!important;
+    padding: 10px;
+  }
+
+  .memberInfoImg {
+    width: 200px!important;
+    border-radius: 5px!important;
+  }
 }
 
 /*MUSICA*/
