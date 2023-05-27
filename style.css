@@ -141,6 +141,9 @@ nav {
     background-size: 100%;
   }
 
+}
+
+@media only screen and (max-width: 992px) {
   nav {
     background-color: rgba(0, 0, 0, 0.6);
   }
@@ -149,8 +152,6 @@ nav {
     flex-direction: row!important;
   }
 }
-
-
 
 /*MIEMBROS*/
 
@@ -168,6 +169,7 @@ nav {
   grid-template-areas:
     "header"
     "main"
+    "section"
     "footer";
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -182,6 +184,11 @@ nav {
 
 main {
   grid-area: main;
+}
+
+#memberInfoCards {
+  grid-area: section;
+  margin-top: 1rem;
 }
 
 .memberSection {
@@ -262,6 +269,20 @@ main {
   border-radius: 5px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .cardGroup {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .cardNmixx {
+    width: calc(33.33% - 10px); /* Restar el espacio entre las cards */
+    margin-bottom: 10px;
+  }
+
+}
+
 footer {
   grid-area: footer;
   background-color: rgb(57, 255, 20);
@@ -328,6 +349,12 @@ footer {
   background-attachment: fixed;
   gap: 10px;
   background-color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 760px) {
+  #musicaBody {
+    background-size: 100%;
+  }
 }
 
 #musicaMain {
@@ -496,11 +523,12 @@ footer {
 
 .lightbox-img {
   max-width: 90%;
-  max-height: 90%;
+  max-height: 70vh;
   margin: auto;
   margin-top: 5%;
   margin-bottom: 5%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  object-fit: contain;
 }
 
 .close {
@@ -517,6 +545,12 @@ footer {
   transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr); /* Cambia a una columna en dispositivos móviles */
+  }
+}
+
 /*TIENDA*/
 
 .tienda {
@@ -531,6 +565,21 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  justify-items: center;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .productos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .cardProducto {
